@@ -9,6 +9,9 @@ h4 es el de los títulos de subapartados
 h1.encabezado_principal{
     font-family: "Sitka Heading", serif; font-size: 42px; font-style: normal;
 font-variant: normal; font-weight: 550; line-height: 26.4px; text-align: center;}
+h1.encabezado_principal-autor{
+  font-family: "Sitka Heading", serif; font-size: 30px; font-style: normal;
+font-variant: normal; font-weight: 550; line-height: 26.4px; text-align: center;}
 h2{
     font-family: "Sitka Heading", serif;font-size:20px; text-align: left; font-weight: 550;}
 h3{
@@ -23,7 +26,7 @@ h5{
  p.documento es el general, equivale al párrafo
  p.cuerpo_texto es el cuerpo del texto del párrafo
  p.cita_mas_3l es el de citas de más de 3 líneas
- p.bibliograia es para la bibliografia
+ p.bibliografia es para la bibliografia
  p.notas_pie es para las notas al pie
  p.creditos es para los creditos*/
 p.documento{font-family:verdana, serif; font-size:15px;}
@@ -33,7 +36,6 @@ p.bibliografia{font-family:verdana, serif; font-size:13px; line-height: 200%;}
 p.notas_pie{font-family:verdana, serif; font-size:12px;}
 p.creditos{font-family:verdana, serif; font-size:15px;
     text-align: center;}
-p.verso{font-family:verdana, serif; font-size:13px; line-height: 10%; margin: 15px; text-align: center;}
 
 /* Las div (divisiones) separan un elemento de otro */
 div.cuerpo_texto{padding-top: 8px;
