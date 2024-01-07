@@ -1,1 +1,1 @@
-Colirio. Página de divulgación del teatro clásico español.
+Colirio. Página de divulgación del Teatro Clásico español.
