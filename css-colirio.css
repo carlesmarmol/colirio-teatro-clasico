@@ -1,0 +1,210 @@
+body{background-color:beige; margin: 25px}
+
+/* Encabezados
+h1 es el principal
+h2 es el de los títulos de los apartados
+h3 es el de los títulos de los subapartados
+h4 es el de los títulos de subapartados
+ que están integrados en subapartados*/
+h1.encabezado_principal{
+    font-family: "Sitka Heading", serif; font-size: 42px; font-style: normal;
+font-variant: normal; font-weight: 550; line-height: 26.4px; text-align: center;}
+h1.encabezado_principal-autor{
+  font-family: "Sitka Heading", serif; font-size: 30px; font-style: normal;
+font-variant: normal; font-weight: 550; line-height: 26.4px; text-align: center;}
+h2{
+    font-family: "Sitka Heading", serif;font-size:20px; text-align: left; font-weight: 550;}
+h3{
+    font-family: "Sitka Heading", serif;font-size:18px; font-weight: 550; text-align: left;}
+h4{
+    font-family: "Sitka Heading", serif;font-size:16px; font-weight: 550; text-align: left;}
+h5{
+  font-family: "Sitka Heading", serif;font-size:20px; text-align: left; font-weight: 550; text-align: center;
+}
+
+/* Párrafos
+ p.documento es el general, equivale al párrafo
+ p.cuerpo_texto es el cuerpo del texto del párrafo
+ p.cita_mas_3l es el de citas de más de 3 líneas
+ p.bibliografia es para la bibliografia
+ p.notas_pie es para las notas al pie
+ p.creditos es para los creditos*/
+p.documento{font-family:verdana, serif; font-size:15px;}
+p.cuerpo_texto{font-family:verdana, serif; font-size:15px; line-height: 200%;}
+p.cita_mas_3l{font-family:verdana, serif; font-size:13px; line-height: 200%; margin: 50px;}
+p.bibliografia{font-family:verdana, serif; font-size:13px; line-height: 200%;}
+p.notas_pie{font-family:verdana, serif; font-size:12px;}
+p.creditos{font-family:verdana, serif; font-size:15px;
+    text-align: center;}
+
+/* Las div (divisiones) separan un elemento de otro */
+div.cuerpo_texto{padding-top: 8px;
+    padding-bottom: 8px;}
+div.encabezado_principal{padding-top: 4px;
+        padding-bottom: 4px;}
+div.boton_nav{padding-top: 11px;
+    padding-bottom: 11px;}
+div.video{text-align: center;}
+div.cita-drama{font-family:verdana, serif; font-size:13px; line-height: 120%; margin-left: 650px;}
+
+
+figure.documento{
+    font-family: verdana, serif; font-size:16px}
+
+/* hr es una línea recta que divide visualmente el documento*/
+hr.notas_pie{border-top: 1.20px solid black;}
+
+/* Con esto le damos estilo al pie de página.
+Para emplearlo escribimos div class="footer" en el html*/
+.footer {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilo de la lista del panel de navegación*/
+li a:hover:not(.active) {
+  background-color: transparent;
+}
+li a.active {
+  background-color: beige;
+  display: block;
+  color: black;
+  text-align: right;
+  text-decoration: none;
+  font-family: verdana, serif;
+  padding: 15px 25px;
+  border-radius: 25px;
+  border: 2px solid black;
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  box-shadow: 5px 10px 7px rgba(0,0,0,0.5);
+}
+
+/* Estilo de la lista del botón de navegación
+li es la lista y ul el tipo de lista
+(unordered list)*/
+li.boton_nav {
+  float: left;
+}
+
+ul.boton_nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 50%;
+}
+
+/* Estilo de la tabla del índice*/
+#tabla {
+  width: 100%;
+  background-color:#f2eaee;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse:collapse}
+    th, td{padding:15px}
+    table {border-spacing: 15px;
+    }
+
+tr.indice:hover {background-color:#f5f5f5;}
+
+/* Estilo del panel de navegación*/
+.sidenav {
+  display: none;
+  height: 80%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: beige;
+  overflow-x: hidden;
+  font-family: verdana, serif;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding-left: 5px;
+  padding-right:5px;
+  padding-top:5px;
+  padding-bottom:5px;
+  box-shadow: 5px 10px 7px rgba(0,0,0,0.5);
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: blue;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Estilo del botón desplegable*/
+ .collapsible {
+    background-color: beige;
+    display: block;
+    color: black;
+    text-align: right;
+    text-decoration: none;
+    font-family: verdana, serif;
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    box-shadow: 5px 10px 7px rgba(0,0,0,0.5);
+  }
+
+  .active, .collapsible:hover {
+    background-color: beige;
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+.nav {
+  border: 2px beige;
+  padding: 25px;
+  background: url(https://i.pinimg.com/originals/75/bc/c0/75bcc0a6776deddf11a99eae543b7f29.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+  font-family:verdana, serif
+
+}
